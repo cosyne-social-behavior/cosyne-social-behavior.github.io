@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="COSYNE 2026 Workshop: Circuits, Dynamics, and Computation in Social Behavior">
+  <title>Circuits, Dynamics, and Computation in Social Behavior, COSYNE 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text: #1a1a1a;
+      --text-light: #555;
+      --border: #e0e0e0;
+      --bg-light: #f7f7f7;
+      --max-w: 960px;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 60px; }
+
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    a { color: #0055aa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Nav */
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: #fff; border-bottom: 1px solid var(--border);
+      padding: 0.75rem 1.5rem;
+      display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;
+    }
+    nav a { font-size: 0.9rem; font-weight: 500; color: var(--text); }
+    nav a:hover { color: #0055aa; text-decoration: none; }
+
+    /* Hero */
+    .hero {
+      background: var(--bg-light);
+      padding: 3rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-text {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      text-align: left;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    .hero .subtitle {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      margin-bottom: 0.25rem;
+    }
+    .hero .meta {
+      font-size: 1.0rem;
+      color: var(--text-light);
+    }
+
+    /* Sections */
+    section {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+    .hero + section { padding-top: 2.5rem; } /* Adjusted padding */
+    section + section { border-top: 1px solid var(--border); }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1.25rem;
+    }
+
+    p + p { margin-top: 1rem; }
+
+    /* Cards grid */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .card .photo {
+      width: 90px; height: 120px;
+      border-radius: 8px;
+      background: #ddd;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .card .info { min-width: 0; }
+    .card .name { font-weight: 600; margin-bottom: 0.2rem; }
+    .card .inst { color: var(--text-light); font-size: 0.9rem; margin-bottom: 0.3rem; }
+    .card .email { font-size: 0.85rem; }
+
+    /* Schedule table */
+    .schedule-wrap { overflow-x: auto; margin-top: 1rem; }
+    table {
+      width: 100%; border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.7rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+    th { background: var(--bg-light); font-weight: 600; }
+    tr.break-row { background: var(--bg-light); }
+    tr.break-row td { font-style: italic; color: var(--text-light); }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      .hero .subtitle { font-size: 1.1rem; }
+      .hero .meta { font-size: 0.9rem; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#organizers">Organizers</a>
+  <a href="#schedule">Schedule</a>
+</nav>
+
+<header class="hero">
+  <div class="hero-text">
+    <h1>Circuits, Dynamics, and Computation in Social Behavior</h1>
+    <div class="subtitle">COSYNE 2026 Workshop</div>
+    <div class="meta">March 17, 2026<br>Cascais, Portugal</div>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p>Social interactions present uniquely rich contexts for group-living species and require integration of perception, memory, and decision-making. Recent advances in neural and behavioral recording techniques have facilitated experiments with multiple interacting animals, creating opportunities for systems neuroscience to study how the brain encodes and responds to social affordances. However, computational frameworks for analyzing these interactions and their neural bases remain underdeveloped, resulting in a gap between experimental capabilities and our theoretical understanding. This workshop will bring together theorists and experimentalists to present current paradigms in social neuroscience, discuss pressing open questions, and collaboratively identify computational and technological advances necessary to answer these questions. </p>
+</section>
+
+<section id="organizers">
+  <h2>Organizers</h2>
+  <div class="cards">
+    <div class="card">
+      <img class="photo" src="images/aditi-photo.png" alt="Headshot of Aditi Jha">
+      <div class="info">
+        <div class="name">Aditi Jha</div>
+        <div class="inst">Stanford University</div>
+      </div>
+    </div>
+    <div class="card">
+      <img class="photo" src="images/libby-photo.jpg" alt="Headshot of Libby Zhang">
+      <div class="info">
+        <div class="name">Libby Zhang</div>
+        <div class="inst">Allen Institute</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <h2>Schedule</h2>
+  <div class="schedule-wrap">
+    <table>
+      <thead>
+        <tr><th>Time</th><th>Speaker</th><th>Topic</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>9:05 – 9:15</td><td>Organizers</td><td>Introduction</td></tr>
+        <tr><td>9:15 – 9:55</td><td>Annegret Falkner</td><td>TBD</td></tr>
+        <tr><td>9:55 – 10:35</td><td>Talmo Pereira</td><td>TBD</td></tr>
+        <tr class="break-row"><td>10:35 – 11:00</td><td colspan="2">Coffee break</td></tr>
+        <tr><td>11:00 – 11:40</td><td>Sanja Bauer-Mikulovic &amp; Klaus Rössel</td><td>Measuring social organization and helping behavior in group-housed mice</td></tr>
+        <tr><td>11:40 – 12:20</td><td>Weizhe Hong</td><td>The Neuroscience of Prosocial Behavior: From Helping and Cooperation to Social AI</td></tr>
+        <tr class="break-row"><td>12:20 – 15:00</td><td colspan="2">Lunch break</td></tr>
+        <tr><td>15:00 – 15:40</td><td>Yusi Chen &amp; Yuan Cheng</td><td>Neural Basis of Leader–Follower Dynamics in Cooperative Behavior</td></tr>
+        <tr><td>15:40 – 16:20</td><td>Jennifer Sun</td><td>New AI Approaches for Social Behavior: Opportunities and Gaps</td></tr>
+        <tr class="break-row"><td>16:20 – 16:40</td><td colspan="2">Coffee break</td></tr>
+        <tr><td>16:40 – 17:20</td><td>Lisa Blum-Moyses</td><td>Mechanistic theories of social foraging</td></tr>
+        <tr><td>17:20 – 18:00</td><td>Nick Haber</td><td>TBD</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  COSYNE 2026 Workshop &middot; Cascais, Portugal
+</footer>
+
+</body>
+</html>

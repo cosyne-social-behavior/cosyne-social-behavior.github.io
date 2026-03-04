@@ -120,6 +120,11 @@
       padding: 0.7rem 0.9rem;
       border-bottom: 1px solid var(--border);
     }
+    /* === fixing time column === */
+    td:first-child, th:first-child {
+      white-space: nowrap;
+      width: 1%;
+    }
     th { background: var(--bg-light); font-weight: 600; }
     tr.break-row { background: var(--bg-light); }
     tr.break-row td { font-style: italic; color: var(--text-light); }
